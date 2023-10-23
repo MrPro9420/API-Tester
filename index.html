@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Http working</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- <style>
+
+      .response {
+        margin: 20px 5px  ;
+        min-height: 80vh;
+        background-color: rgb(100, 100, 100);
+        border-radius: 10px;
+        padding: 10px 5px 10px 0;
+      }
+      
+      /* li {
+        margin: 10px 0;
+        color: aliceblue;
+        
+      } */
+      .clear {
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        padding: 10px;
+        font-weight: bolder;
+        border-radius: 10%;
+      }
+
+      .hidden {
+        visibility: hidden;
+        /* display: none; */
+      }
+      .form {
+        
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        padding: 10px;
+      }
+
+      .form input{
+        outline: none;
+        padding: 10px;
+        width: 70%;
+      }
+      .form button{
+        padding: 10px;
+        background-color: rgb(54, 54, 54);
+        color: aliceblue;
+        border-radius: 10%;
+      }
+
+      table,tr,td,th{
+            border: 1px solid aliceblue;
+
+            border-collapse: collapse;
+            color: aliceblue;
+        }
+        table{
+            margin: 10px;
+            width: 99%;
+            height: auto;
+        }
+        table:hover {background-color: rgba(255, 127, 80, 0.63);}
+
+        
+        td,th{
+            padding: 5px;
+            
+        }
+        td{
+          width: 80%;
+        }
+        th{
+          width: 18%;
+        }
+    </style> -->
+    <!-- <script src="script.js" defer></script> -->
+    <!-- <script src="myscript.js" defer></script> -->
+    <script src="fetch.js" defer></script>
+    <!-- <script src="objectscript.js" defer></script> -->
+  </head>
+  <body>
+    <p class="details hidden"></p>
+    <div class="response">
+      <!-- <ol id="myList"></ol> -->
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Enter API URL HERE...." />
+
+      <button onclick="runcode()">Fetch</button>
+    </div>
+    
+
+    <button onclick="clearAPI()" class="clear hidden">Clear</button>
+  </body>
+</html>
